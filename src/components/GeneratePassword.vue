@@ -10,7 +10,7 @@
       <form>
          <div class="field-wrap">
             <label>Strength</label>
-            <span class="range-value">{{ set.length }}aa</span>
+            <span class="range-value">{{ set.length }}</span>
             <div class="range-slider_wrapper slider-strength">
                <span class="slider-bar"></span>
                <input

@@ -10,7 +10,7 @@
       <form>
          <div class="field-wrap">
             <label>Strength</label>
-            <span class="range-value"></span>
+            <span class="range-value">{{ set.length }}</span>
             <div class="range-slider_wrapper slider-strength">
                <span class="slider-bar"></span>
                <input
@@ -55,8 +55,27 @@
 import "@/assets/css/style.css";
 export default {
    name: "HelloWorld",
-   props: {
-      msg: String,
+   data() {
+      return {
+         password: "",
+         copied: false,
+
+         set: {
+            maxLength: 32,
+            maxDigits: 6,
+            maxSymbol: 6,
+            length: 10,
+            digits: 4,
+            symbols: 2,
+            ambiguous: true,
+         },
+      };
+   },
+
+   computed: {
+      lengthThumbnailPosition: function () {
+         return (this.set.length - 6 / this.set.length - 6) * 100;
+      },
    },
 };
 </script>

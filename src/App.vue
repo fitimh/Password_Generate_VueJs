@@ -1,10 +1,15 @@
 <template>
    <GeneratePassword msg="Welcome to Your Vue.js App" />
+
+   <div class="footer">
+      <testVue/>
+   </div>
 </template>
 
 <script>
 import "bootstrap/dist/css/bootstrap.min.css";
 import GeneratePassword from "./components/GeneratePassword.vue";
+import testVue from './components/test.vue';
 // <link
 //    rel="stylesheet"
 //    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -16,6 +21,7 @@ export default {
    name: "App",
    components: {
       GeneratePassword,
+      testVue,
    },
 };
 </script>

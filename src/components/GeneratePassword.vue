@@ -15,7 +15,7 @@
           class="range-slider_wrapper slider-strength"
           v-bind:class="strength.text"
         >
-          <span class="slider-bar"></span>
+          <span class="slider-bar">hello</span>
           <input type="range" class="range-slider" min="0" max="100" disabled />
         </div>
       </div>
